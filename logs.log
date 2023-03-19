@@ -1,0 +1,924 @@
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user 404 - 8.657 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET / 404 - 6.531 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /favicon.ico 404 - 1.573 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /api/v1 404 - 3.241 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user 404 - 8.440 ms - message: -
+[31merror[39m: SyntaxError: Unexpected token } in JSON at position 62
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:201:9)
+    at invokeCallback (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[31merror[39m: POST /api/v1/users 400 - 28.427 ms - message: Unexpected token } in JSON at position 62
+[31merror[39m: Error: "username" is required,"usernam" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/users 400 - 8.303 ms - message: "username" is required,"usernam" is not allowed
+[31merror[39m: Error: "pic" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/users 400 - 18.034 ms - message: "pic" is not allowed
+[31merror[39m: MongoServerError: E11000 duplicate key error collection: Portfolio.users index: username_1 dup key: { username: "ujjwal" }
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection_pool.js:299:25
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:284:20)
+    at Connection.onMessage (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:219:9)
+    at MessageStream.<anonymous> (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+[31merror[39m: POST /api/v1/users 400 - 954.156 ms - message: Duplicate value entered for username field, please choose another value
+[31merror[39m: Error: "usernam" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6415eace50edcaf8b4ca336c 400 - 9.827 ms - message: "usernam" is not allowed
+[31merror[39m: Error: "username" is required,"usernam" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/users 400 - 61.198 ms - message: "username" is required,"usernam" is not allowed
+[31merror[39m: Error: "name" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/users 400 - 6.754 ms - message: "name" is required
+[31merror[39m: Error: "location" is required,"locationn" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/education 400 - 4.038 ms - message: "location" is required,"locationn" is not allowed
+[31merror[39m: Error: User with id: 6415ebd5493db4c0836c03d2 not found
+    at Object.createEducation (C:\Users\Dell\Documents\Projects\portfolio\services\education.services.js:10:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createEducation (C:\Users\Dell\Documents\Projects\portfolio\controllers\education.controllers.js:9:20)
+[31merror[39m: POST /api/v1/education 404 - 307.576 ms - message: User with id: 6415ebd5493db4c0836c03d2 not found
+[31merror[39m: Error: User with id: 6416c28a36319ea81bd9391d not found
+    at Object.updateEducation (C:\Users\Dell\Documents\Projects\portfolio\services\education.services.js:43:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateEducation (C:\Users\Dell\Documents\Projects\portfolio\controllers\education.controllers.js:27:20)
+[31merror[39m: PATCH /api/v1/education/6416c28a36319ea81bd9391d 404 - 162.237 ms - message: User with id: 6416c28a36319ea81bd9391d not found
+[31merror[39m: Error: User with id: 6416c28a36319ea81bd9391d not found
+    at Object.updateEducation (C:\Users\Dell\Documents\Projects\portfolio\services\education.services.js:43:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateEducation (C:\Users\Dell\Documents\Projects\portfolio\controllers\education.controllers.js:27:20)
+[31merror[39m: PATCH /api/v1/education/6416c28a36319ea81bd9391d 404 - 192.395 ms - message: User with id: 6416c28a36319ea81bd9391d not found
+[31merror[39m: SyntaxError: Unexpected token } in JSON at position 29
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:201:9)
+    at invokeCallback (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[31merror[39m: PATCH /api/v1/education/6416c28a36319ea81bd9391d 400 - 2.091 ms - message: Unexpected token } in JSON at position 29
+[31merror[39m: Error: Education with id: 6415eace50edcaf8b4ca336c not found
+    at Object.deleteEducation (C:\Users\Dell\Documents\Projects\portfolio\services\education.services.js:57:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteEducation (C:\Users\Dell\Documents\Projects\portfolio\controllers\education.controllers.js:33:20)
+[31merror[39m: DELETE /api/v1/education/6415eace50edcaf8b4ca336c 404 - 87.420 ms - message: Education with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: Other details with id: 6415eace50edcaf8b4ca336c not found
+    at Object.deleteOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:54:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:33:22)
+[31merror[39m: DELETE /api/v1/others/6415eace50edcaf8b4ca336c 404 - 152.439 ms - message: Other details with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: "tagline" is required,"email" is required,"description" is required,"others" is required,"user" is required,"username" is not allowed,"name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 55.740 ms - message: "tagline" is required,"email" is required,"description" is required,"others" is required,"user" is required,"username" is not allowed,"name" is not allowed
+[31merror[39m: Error: "email" is required,phone_invalid_length,"user" is required,"emaiil" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 52.124 ms - message: "email" is required,phone_invalid_length,"user" is required,"emaiil" is not allowed
+[31merror[39m: Error: phone_invalid_length,"user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 13.988 ms - message: phone_invalid_length,"user" is required
+[31merror[39m: Error: phone_invalid_length,"user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 16.953 ms - message: phone_invalid_length,"user" is required
+[31merror[39m: Error: "user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 10.478 ms - message: "user" is required
+[31merror[39m: Error: ""user"" must be a valid mongo id .
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/others 400 - 8.729 ms - message: ""user"" must be a valid mongo id .
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 832.339 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 532.682 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 248.704 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 120.186 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 124.743 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 109.301 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 108.298 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 86.236 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: undefined not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 353.132 ms - message: User with id: undefined not found
+[31merror[39m: Error: User with id: 6415ebd5493db4c0836c03d2 not found
+    at Object.createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:9:22)
+[31merror[39m: POST /api/v1/others 404 - 166.013 ms - message: User with id: 6415ebd5493db4c0836c03d2 not found
+[31merror[39m: ValidationError: OtherDeatails validation failed: email: Please provide valid email
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/others 400 - 317.287 ms - message: OtherDeatails validation failed: email: Please provide valid email
+[31merror[39m: Error: ""user"" must be a valid mongo id .
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 9.630 ms - message: ""user"" must be a valid mongo id .
+[31merror[39m: Error: User with id: 6416dfc9040f0ff15ba6c82f not found
+    at Object.updateOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:41:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:27:22)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 404 - 164.644 ms - message: User with id: 6416dfc9040f0ff15ba6c82f not found
+[31merror[39m: ValidationError: OtherDeatails validation failed: email: Please provide valid email
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 170.114 ms - message: OtherDeatails validation failed: email: Please provide valid email
+[31merror[39m: Error: "from" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 7.676 ms - message: "from" is not allowed
+[31merror[39m: ValidationError: OtherDeatails validation failed: others.age: Path `others.age` is required., others.contact: Path `others.contact` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 119.218 ms - message: OtherDeatails validation failed: others.age: Path `others.age` is required., others.contact: Path `others.contact` is required.
+[31merror[39m: Error: "from" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 49.448 ms - message: "from" is not allowed
+[31merror[39m: Error: "from" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 3.865 ms - message: "from" is not allowed
+[31merror[39m: SyntaxError: Unexpected token } in JSON at position 80
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:201:9)
+    at invokeCallback (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Dell\Documents\Projects\portfolio\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 400 - 4.232 ms - message: Unexpected token } in JSON at position 80
+[31merror[39m: Error: "media" is required,"link" is required,"user" is required,"username" is not allowed,"name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/social/media 400 - 51.211 ms - message: "media" is required,"link" is required,"user" is required,"username" is not allowed,"name" is not allowed
+[31merror[39m: Error: "media" is required,"user" is required,"meida" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/social/media 400 - 5.582 ms - message: "media" is required,"user" is required,"meida" is not allowed
+[31merror[39m: Error: "user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/social/media 400 - 4.678 ms - message: "user" is required
+[31merror[39m: Error: User with id: 6415ebd5493db4c0836c03d2 not found
+    at Object.createSocialMedia (C:\Users\Dell\Documents\Projects\portfolio\services\socialMedias.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createSocialMedia (C:\Users\Dell\Documents\Projects\portfolio\controllers\socialMedias.controllers.js:9:22)
+[31merror[39m: POST /api/v1/social/media 404 - 105.419 ms - message: User with id: 6415ebd5493db4c0836c03d2 not found
+[31merror[39m: Error: User with id: 6415eace50edcaf8b4ca336c not found
+    at Object.updateUser (C:\Users\Dell\Documents\Projects\portfolio\services\user.services.js:28:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateUser (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:27:15)
+[31merror[39m: PATCH /api/v1/users/6415eace50edcaf8b4ca336c 404 - 103.922 ms - message: User with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: "meida" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 4.728 ms - message: "meida" is not allowed
+[31merror[39m: Error: "media" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 4.852 ms - message: "media" is not allowed
+[31merror[39m: Error: "media" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 6.780 ms - message: "media" is not allowed
+[31merror[39m: Error: "media" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 5.898 ms - message: "media" is not allowed
+[31merror[39m: Error: "media" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 54.353 ms - message: "media" is not allowed
+[31merror[39m: Error: "media" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6416e3ad50d4bb3522721bd4 400 - 8.848 ms - message: "media" is not allowed
+[31merror[39m: Error: User with id: 6415ebd5493db4c0836c03d2 not found
+    at Object.updateSocialMedia (C:\Users\Dell\Documents\Projects\portfolio\services\socialMedias.services.js:41:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateSocialMedia (C:\Users\Dell\Documents\Projects\portfolio\controllers\socialMedias.controllers.js:27:22)
+[31merror[39m: PATCH /api/v1/social/media/6416e3ad50d4bb3522721bd4 404 - 162.131 ms - message: User with id: 6415ebd5493db4c0836c03d2 not found
+[31merror[39m: CastError: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+    at model.Query.exec (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4891:21)
+    at model.Query.Query.then (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[31merror[39m: GET /api/v1/project/category 400 - 8.131 ms - message: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+[31merror[39m: CastError: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+    at model.Query.exec (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4891:21)
+    at model.Query.Query.then (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[31merror[39m: GET /api/v1/project/category 400 - 4.450 ms - message: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+[31merror[39m: CastError: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+    at model.Query.exec (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4891:21)
+    at model.Query.Query.then (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\query.js:4990:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[31merror[39m: GET /api/v1/project/category 400 - 9.922 ms - message: Cast to ObjectId failed for value "category" (type string) at path "_id" for model "Project"
+[31merror[39m: Error: "category" is required,"username" is not allowed,"name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/projectcategory 400 - 48.618 ms - message: "category" is required,"username" is not allowed,"name" is not allowed
+[31merror[39m: TypeError: ProjectCategory.fndOne is not a function
+    at Object.getProjectCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\project.category.services.js:15:51)
+    at getProjectCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\project.category.controller.js:17:58)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: GET /api/v1/projectcategory/6416e63ffb40fefac2847975 500 - 4.386 ms - message: ProjectCategory.fndOne is not a function
+[31merror[39m: Error: "category" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/users/6415eace50edcaf8b4ca336c 400 - 45.961 ms - message: "category" is not allowed
+[31merror[39m: Error: Project Category with id: 6415eace50edcaf8b4ca336c not found
+    at Object.deleteProjectCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\project.category.services.js:43:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\project.category.controller.js:30:29)
+[31merror[39m: DELETE /api/v1/projectcategory/6415eace50edcaf8b4ca336c 404 - 130.469 ms - message: Project Category with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: TypeError: SkillCategory.fndOne is not a function
+    at Object.deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\skills.category.services.js:40:45)
+    at deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\skill.category.controller.js:30:54)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+[31merror[39m: DELETE /api/v1/skillscategory/6415eace50edcaf8b4ca336c 500 - 10.223 ms - message: SkillCategory.fndOne is not a function
+[31merror[39m: Error: Skill Category with id: 6415eace50edcaf8b4ca336c not found
+    at Object.deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\skills.category.services.js:43:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\skill.category.controller.js:30:27)
+[31merror[39m: DELETE /api/v1/skillscategory/6415eace50edcaf8b4ca336c 404 - 124.269 ms - message: Skill Category with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: "category" is required,"categor" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skillscategory 400 - 12.683 ms - message: "category" is required,"categor" is not allowed
+[31merror[39m: Error: Skill Category with id: 6416f41ed2256d3d521c3177 not found
+    at Object.deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\skills.category.services.js:43:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\skill.category.controller.js:30:27)
+[31merror[39m: DELETE /api/v1/skillscategory/6416f41ed2256d3d521c3177 404 - 296.676 ms - message: Skill Category with id: 6416f41ed2256d3d521c3177 not found
+[31merror[39m: Error: Skill Category with id: 6416f3e3d2256d3d521c3175 not found
+    at Object.updateSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\skills.category.services.js:28:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\skill.category.controller.js:24:27)
+[31merror[39m: PATCH /api/v1/skillscategory/6416f3e3d2256d3d521c3175 404 - 1362.759 ms - message: Skill Category with id: 6416f3e3d2256d3d521c3175 not found
+[31merror[39m: Error: Project with id: 6415eace50edcaf8b4ca336c not found
+    at Object.deleteProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:67:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async deleteProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:33:18)
+[31merror[39m: DELETE /api/v1/project/6415eace50edcaf8b4ca336c 404 - 79.128 ms - message: Project with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/projects 404 - 8.312 ms - message: -
+[31merror[39m: Error: "category" is required,"title" is required,"description" is required,"type" is required,"photos" is required,"languages" is required,"time" is required,"user" is required,"username" is not allowed,"name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/project 400 - 6.254 ms - message: "category" is required,"title" is required,"description" is required,"type" is required,"photos" is required,"languages" is required,"time" is required,"user" is required,"username" is not allowed,"name" is not allowed
+[31merror[39m: Error: Project with id: 6415eace50edcaf8b4ca336c not found
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:30:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6415eace50edcaf8b4ca336c 404 - 332.414 ms - message: Project with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: "username" is not allowed,"picture" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/project/6415eace50edcaf8b4ca336c 400 - 3.780 ms - message: "username" is not allowed,"picture" is not allowed
+[31merror[39m: Error: "username" is not allowed,"picture" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/project/6415eace50edcaf8b4ca336c 400 - 3.064 ms - message: "username" is not allowed,"picture" is not allowed
+[31merror[39m: Error: ""category"" must be a valid mongo id .,"type" must be one of [group, single]
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/project 400 - 11.933 ms - message: ""category"" must be a valid mongo id .,"type" must be one of [group, single]
+[31merror[39m: Error: "type" must be one of [group, single]
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/project 400 - 5.701 ms - message: "type" must be one of [group, single]
+[31merror[39m: Error: User with id:6415eace50edcaf8b4ca3364 not found
+    at Object.createProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:9:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:9:18)
+[31merror[39m: POST /api/v1/project 404 - 130.002 ms - message: User with id:6415eace50edcaf8b4ca3364 not found
+[31merror[39m: Error: Project catefory with id: 6416e63ffb40fefac2847974 not found
+    at Object.createProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:14:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:9:18)
+[31merror[39m: POST /api/v1/project 404 - 539.394 ms - message: Project catefory with id: 6416e63ffb40fefac2847974 not found
+[31merror[39m: Error: "type" must be one of [group, single]
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/project 400 - 7.256 ms - message: "type" must be one of [group, single]
+[31merror[39m: Error: Project with id: 6415eace50edcaf8b4ca336c not found
+    at Object.updateProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:40:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:27:18)
+[31merror[39m: PATCH /api/v1/project/6415eace50edcaf8b4ca336c 404 - 97.920 ms - message: Project with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: User with id:6416e63ffb40fefac2847975 not found
+    at Object.updateProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:46:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:27:18)
+[31merror[39m: PATCH /api/v1/project/6416f71f82696556c057c7a9 404 - 218.520 ms - message: User with id:6416e63ffb40fefac2847975 not found
+[31merror[39m: Error: Project catefory with id: 6416e63ffb40fefac2847974 not found
+    at Object.updateProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:53:10)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:27:18)
+[31merror[39m: PATCH /api/v1/project/6416f71f82696556c057c7a9 404 - 306.631 ms - message: Project catefory with id: 6416e63ffb40fefac2847974 not found
+[31merror[39m: Error: "category" is required,"skills" is required,"user" is required,"username" is not allowed,"name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 3.721 ms - message: "category" is required,"skills" is required,"user" is required,"username" is not allowed,"name" is not allowed
+[31merror[39m: Error: skills with id: 6415eace50edcaf8b4ca336c not found
+    at Object.getSingleSkills (C:\Users\Dell\Documents\Projects\portfolio\services\skills.services.js:30:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleSkills (C:\Users\Dell\Documents\Projects\portfolio\controllers\Skills.controllers.js:20:17)
+[31merror[39m: GET /api/v1/skills/6415eace50edcaf8b4ca336c 404 - 85.096 ms - message: skills with id: 6415eace50edcaf8b4ca336c not found
+[31merror[39m: Error: "username" is not allowed,"picture" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/skills/6415eace50edcaf8b4ca336c 400 - 4.893 ms - message: "username" is not allowed,"picture" is not allowed
+[31merror[39m: ReferenceError: Cannot access 'skills' before initialization
+    at Object.deleteSkills (C:\Users\Dell\Documents\Projects\portfolio\services\skills.services.js:64:15)
+    at deleteSkills (C:\Users\Dell\Documents\Projects\portfolio\controllers\Skills.controllers.js:33:38)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+[31merror[39m: DELETE /api/v1/skills/6415eace50edcaf8b4ca336c 500 - 2.933 ms - message: Cannot access 'skills' before initialization
+[31merror[39m: ReferenceError: Cannot access 'skills' before initialization
+    at Object.deleteSkills (C:\Users\Dell\Documents\Projects\portfolio\services\skills.services.js:64:15)
+    at deleteSkills (C:\Users\Dell\Documents\Projects\portfolio\controllers\Skills.controllers.js:33:38)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+[31merror[39m: DELETE /api/v1/skills/6415eace50edcaf8b4ca336c 500 - 2.946 ms - message: Cannot access 'skills' before initialization
+[31merror[39m: Error: "category" is required,"skills" must be an array,"user" is required,"categoty" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 6.327 ms - message: "category" is required,"skills" must be an array,"user" is required,"categoty" is not allowed
+[31merror[39m: Error: ""category"" must be a valid mongo id .,"skills" must be an array,"user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 4.096 ms - message: ""category"" must be a valid mongo id .,"skills" must be an array,"user" is required
+[31merror[39m: Error: "skills" must be an array,"user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 4.947 ms - message: "skills" must be an array,"user" is required
+[31merror[39m: Error: "user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 4.201 ms - message: "user" is required
+[31merror[39m: Error: ""user"" must be a valid mongo id .
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 5.808 ms - message: ""user"" must be a valid mongo id .
+[31merror[39m: Error: Skill catefory with id: 6416f45b82696556c057c78d not found
+    at Object.createSkills (C:\Users\Dell\Documents\Projects\portfolio\services\skills.services.js:14:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createSkills (C:\Users\Dell\Documents\Projects\portfolio\controllers\Skills.controllers.js:9:17)
+[31merror[39m: POST /api/v1/skills 404 - 159.344 ms - message: Skill catefory with id: 6416f45b82696556c057c78d not found
+[31merror[39m: Error: ""category"" must be a valid mongo id .
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 6.530 ms - message: ""category"" must be a valid mongo id .
+[31merror[39m: Error: "username" is not allowed,"picture" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/skills/6416f98182696556c057c7c0 400 - 5.434 ms - message: "username" is not allowed,"picture" is not allowed
+[31merror[39m: Error: "name" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+[31merror[39m: PATCH /api/v1/skills/6416f98182696556c057c7c0 400 - 2.817 ms - message: "name" is not allowed
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user/details/jaynath 404 - 6.932 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user/details/jaynath 404 - 4.423 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user/details/jaynath 404 - 20.626 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /api/v1/user/details/jaynath 404 - 28.240 ms - message: -
+[31merror[39m: ReferenceError: jaynath is not defined
+    at getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:40:57)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:376:14)
+[31merror[39m: GET /api/v1/users/details/jaynath 500 - 6.203 ms - message: jaynath is not defined
+[31merror[39m: TypeError: Cannot read properties of null (reading 'tagline')
+    at Object.getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:23:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:40:22)
+[31merror[39m: GET /api/v1/users/details/ujjwal 500 - 170.179 ms - message: Cannot read properties of null (reading 'tagline')
+[31merror[39m: TypeError: Cannot read properties of null (reading 'tagline')
+    at Object.getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:23:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:40:22)
+[31merror[39m: GET /api/v1/users/details/ujjwal 500 - 387.935 ms - message: Cannot read properties of null (reading 'tagline')
+[31merror[39m: Error: Other details with id: 6416dfc9040f0ff15ba6c82f not found
+    at Object.updateOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\services\otherDetails.services.js:35:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async updateOtherDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\otherDetails.controllers.js:27:22)
+[31merror[39m: PATCH /api/v1/others/6416dfc9040f0ff15ba6c82f 404 - 399.276 ms - message: Other details with id: 6416dfc9040f0ff15ba6c82f not found
+[31merror[39m: Error: skills with id: 6416f98182696556c057c7c0 not found
+    at Object.getSingleSkills (C:\Users\Dell\Documents\Projects\portfolio\services\skills.services.js:30:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleSkills (C:\Users\Dell\Documents\Projects\portfolio\controllers\Skills.controllers.js:20:17)
+[31merror[39m: GET /api/v1/skills/6416f98182696556c057c7c0 404 - 106.093 ms - message: skills with id: 6416f98182696556c057c7c0 not found
+[31merror[39m: Error: "skills" is required,"name" is not allowed,"level" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/skills 400 - 6.665 ms - message: "skills" is required,"name" is not allowed,"level" is not allowed
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/skillscategory 400 - 666.434 ms - message: SkillCategory validation failed: user: Path `user` is required.
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/skillscategory 400 - 158.873 ms - message: SkillCategory validation failed: user: Path `user` is required.
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/skillscategory 400 - 90.327 ms - message: SkillCategory validation failed: user: Path `user` is required.
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/skillscategory 400 - 191.212 ms - message: SkillCategory validation failed: user: Path `user` is required.
+[31merror[39m: Error: "user" is required
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:140:7)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+[31merror[39m: POST /api/v1/projectcategory 400 - 55.494 ms - message: "user" is required
+[31merror[39m: Error: ENOENT: no such file or directory, stat 'C:\Users\Dell\Documents\Projects\portfolio\frontend\index.html'
+[31merror[39m: GET / 404 - 18.094 ms - message: ENOENT: no such file or directory, stat 'C:\Users\Dell\Documents\Projects\portfolio\frontend\index.html'
+[31merror[39m: Error
+[31merror[39m: GET /favicon.ico 404 - 8.207 ms - message: -

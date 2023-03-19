@@ -1,0 +1,8 @@
+module.exports.projectCategoryValidations = require("./category/project.category.validations")
+module.exports.skillsCategoryValidations = require("./category/skills.category.validations")
+module.exports.educationValidations = require("./education.validations")
+module.exports.otherDetailsValidations = require("./otherDetails.validations")
+module.exports.projectValidations = require("./project.validations")
+module.exports.skillsValidations = require("./skills.validations")
+module.exports.socialMediasValidations = require("./socialMedias.validations")
+module.exports.userValidations = require("./user.validations")
