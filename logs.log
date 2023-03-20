@@ -922,3 +922,23 @@
 [31merror[39m: GET / 404 - 18.094 ms - message: ENOENT: no such file or directory, stat 'C:\Users\Dell\Documents\Projects\portfolio\frontend\index.html'
 [31merror[39m: Error
 [31merror[39m: GET /favicon.ico 404 - 8.207 ms - message: -
+[31merror[39m: Error: Cannot send email.
+    at Object.sendEmail (C:\Users\Dell\Documents\Projects\portfolio\services\contact.services.js:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendEmail (C:\Users\Dell\Documents\Projects\portfolio\controllers\contact.controllers.js:8:2)
+[31merror[39m: POST /api/v1/contact/jaynath 400 - 180.187 ms - message: Cannot send email.
+[31merror[39m: Error: Cannot send email.
+    at Object.sendEmail (C:\Users\Dell\Documents\Projects\portfolio\services\contact.services.js:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendEmail (C:\Users\Dell\Documents\Projects\portfolio\controllers\contact.controllers.js:8:2)
+[31merror[39m: POST /api/v1/contact/jaynath 400 - 222.024 ms - message: Cannot send email.
+[31merror[39m: Error: Cannot send email.
+    at Object.sendEmail (C:\Users\Dell\Documents\Projects\portfolio\services\contact.services.js:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendEmail (C:\Users\Dell\Documents\Projects\portfolio\controllers\contact.controllers.js:8:2)
+[31merror[39m: POST /api/v1/contact/jaynath 400 - 195.078 ms - message: Cannot send email.
+[31merror[39m: TypeError: sendContactEmail is not a function
+    at Object.sendEmail (C:\Users\Dell\Documents\Projects\portfolio\services\contact.services.js:18:8)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendEmail (C:\Users\Dell\Documents\Projects\portfolio\controllers\contact.controllers.js:8:2)
+[31merror[39m: POST /api/v1/contact/jaynath 500 - 465.054 ms - message: sendContactEmail is not a function

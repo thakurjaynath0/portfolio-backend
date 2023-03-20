@@ -10,6 +10,7 @@ const projectCategoryRoutes = require("./project.category.routes")
 const skillsCategoryRoutes = require("./skills.category.routes")
 const socialMediasRoutes = require("./socialMedias.routes")
 const otherDetailsRoutes = require("./otherDetails.routes")
+const contactRoutes = require("./contact.routes")
 
 const routes = [
 	/**
@@ -52,6 +53,10 @@ const routes = [
 	{
 		path: "/others",
 		route: otherDetailsRoutes
+	},
+	{
+		path: "/contact",
+		route: contactRoutes
 	}
 ]
 
