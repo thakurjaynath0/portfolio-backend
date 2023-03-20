@@ -1,6 +1,6 @@
 const router = require("express").Router()
 
-const {createSkills, getAllSkills, getSingleSkills, updateSkills, deleteSkills} = require("../../controllers/Skills.controllers")
+const {createSkills, getAllSkills, getSingleSkills, updateSkills, deleteSkills} = require("../../controllers/skills.controllers")
 const validate = require("../../middlewares/validate")
 const {skillsValidations} = require("../../validations")
 

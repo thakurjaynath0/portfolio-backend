@@ -2,11 +2,10 @@
 const CustomError = require("../../errors")
 const multer = require("multer")
 const { checkFile } = require("./allowedFiles")
-const path = require("path")
 
 const storage = multer.diskStorage({
 	destination: function (req, files, callBack) {
-		callBack(null, path.join(__dirname, "../../uploads"))
+		callBack(null, "/uploads")
 	},
 	filename: function (req, files, callBack) {
 		callBack(null, Date.now() + files.originalname)

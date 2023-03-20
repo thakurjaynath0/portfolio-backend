@@ -20,18 +20,20 @@ const getUserDetails = async (username) => {
 	user.picture == null ? userDetails.picture="no photo" : userDetails.picture=user.picture
 	
 	const otherDetails = await OtherDetails.findOne({user: user._id})
-	about.tagline = otherDetails.tagline
-	about.email = otherDetails.email
-	about.description = otherDetails.description
-	about.age = otherDetails.age
-	about.contact = otherDetails.contact
-	about.from = otherDetails.from
+	about.tagline = otherDetails?.tagline
+	about.email = otherDetails?.email
+	about.description = otherDetails?.description
+	let others = {}
+	others.age = otherDetails?.age
+	others.contact = otherDetails?.contact
+	others.from = otherDetails?.from
+	about.others = others
 
 	const education = await Education.find({user: user._id})
-	about.education = education
+	userDetails.education = education
 
 	const socialMedias = await SocialMedias.find({user: user._id})
-	about.socialMedias = socialMedias
+	userDetails.socialMedias = socialMedias
 
 	const projectsByCategory = await ProjectCategory.find({user: user._id}).populate("projects")
 	let projects = []
@@ -41,7 +43,7 @@ const getUserDetails = async (username) => {
 			projects = [...projects, curr]
 		}
 	}
-	about.projects = projects
+	userDetails.projects = projects
 
 	const skillsByCategory = await SkillCategory.find({user: user._id}).populate("skills")
 	let skills = []
@@ -51,7 +53,7 @@ const getUserDetails = async (username) => {
 			skills = [...skills, curr]
 		}
 	}
-	about.skills = skills
+	userDetails.skills = skills
 
 	userDetails.about = about
 	return userDetails
