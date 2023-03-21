@@ -12,6 +12,8 @@ const cookieParser = require("cookie-parser")
 const routes = require("./routes/v1")
 const customError = require("./errors")
 const { errorConverter, errorHandler } = require("./middlewares/errors")
+const swaggerUI = require("swagger-ui-express")
+const swaggerDocument = require("./swagger")
 
 const app = express()
 
@@ -34,6 +36,8 @@ app.use(cors())
 app.options("*", cors())
 
 app.use(cookieParser(config.jwt.secret))
+
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 
 app.use("/api/v1", routes)
 
