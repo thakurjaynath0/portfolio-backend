@@ -8,6 +8,8 @@ const {	projectCategoryPath, projectCategorySchema} = require("./project.categor
 const {skillsCategoryPath, skillsCategorySchema} = require("./skills.category.docs")
 const {projectPath, projectSchema} = require("./project.docs")
 const {skillsPath, skillsSchema} = require("./skills.docs")
+const {contactPath, contactSchema} = require("./contact.docs")
+const {fileuploadPath, fileUploadSchema} = require("./fileupload.docs")
 
 const paths = {
 	...userPath,
@@ -17,7 +19,9 @@ const paths = {
 	...projectCategoryPath,
 	...skillsCategoryPath,
 	...projectPath,
-	...skillsPath
+	...skillsPath,
+	...contactPath,
+	...fileuploadPath
 }
 const schemas = {
 	...userSchema,
@@ -27,7 +31,9 @@ const schemas = {
 	...projectCategorySchema,
 	...skillsCategorySchema,
 	...projectSchema,
-	...skillsSchema
+	...skillsSchema,
+	...contactSchema,
+	...fileUploadSchema
 }
 
 const docs = {
