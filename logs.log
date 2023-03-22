@@ -1004,3 +1004,27 @@
     at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
 [31merror[39m: GET /api/v1/project/6416f6d882696556c057c7a5 500 - 602.543 ms - message: category is not defined
 >>>>>>> Stashed changes
+[31merror[39m: Error: Unsupported file type .
+    at fileFilter (C:\Users\Dell\Documents\Projects\portfolio\utils\fileupload\fileupload.js:22:13)
+    at wrappedFileFilter (C:\Users\Dell\Documents\Projects\portfolio\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\Dell\Documents\Projects\portfolio\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:526:28)
+    at HeaderParser.cb (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Dell\Documents\Projects\portfolio\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\Dell\Documents\Projects\portfolio\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:567:19)
+[31merror[39m: POST /api/v1/upload 400 - 4.995 ms - message: Unsupported file type .
+[31merror[39m: Error: Unsupported file type .
+    at fileFilter (C:\Users\Dell\Documents\Projects\portfolio\utils\fileupload\fileupload.js:22:13)
+    at wrappedFileFilter (C:\Users\Dell\Documents\Projects\portfolio\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\Dell\Documents\Projects\portfolio\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:526:28)
+    at HeaderParser.cb (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\Dell\Documents\Projects\portfolio\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\Dell\Documents\Projects\portfolio\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\Dell\Documents\Projects\portfolio\node_modules\busboy\lib\types\multipart.js:567:19)
+[31merror[39m: POST /api/v1/upload 400 - 2.724 ms - message: Unsupported file type .

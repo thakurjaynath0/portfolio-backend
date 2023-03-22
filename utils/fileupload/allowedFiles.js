@@ -1,5 +1,6 @@
 const allowedFiles = {
-	image: "*"
+	image: "*",
+	application: ["pdf"]
 }
 
 const checkFile = (mimetype) => {

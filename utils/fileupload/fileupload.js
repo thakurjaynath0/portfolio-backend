@@ -5,7 +5,11 @@ const { checkFile } = require("./allowedFiles")
 
 const storage = multer.diskStorage({
 	destination: function (req, files, callBack) {
-		callBack(null, "uploads")
+		if(files.mimetype == "application/pdf"){
+			callBack(null, "uploads/cv")
+		}else{
+			callBack(null, "uploads")
+		}
 	},
 	filename: function (req, files, callBack) {
 		callBack(null, Date.now() + files.originalname)
