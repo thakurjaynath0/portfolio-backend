@@ -21,8 +21,10 @@ if (config.env !== "test") {
 	app.use(morgan.successHandler)
 	app.use(morgan.errorHandler)
 }
+app.use(helmet({
+	crossOriginResourcePolicy: false,
+})) // set security HTTP headers
 
-app.use(helmet()) // set security HTTP headers
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

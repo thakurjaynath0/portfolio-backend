@@ -972,3 +972,7 @@
 [31merror[39m: POST /api/v1/upload 500 - 14.675 ms - message: ENOENT: no such file or directory, open 'C:\uploads\1679397239006IMG_20230105_230636.jpg'
 [31merror[39m: Error: ENOENT: no such file or directory, open 'C:\uploads\167939729222720230103162717_IMG_1721.JPG'
 [31merror[39m: POST /api/v1/upload 500 - 4.622 ms - message: ENOENT: no such file or directory, open 'C:\uploads\167939729222720230103162717_IMG_1721.JPG'
+[31merror[39m: Error
+[31merror[39m: GET /uploads/1679290382875Screenshot%20from%202022-03-12%2021-18-01.png 404 - 3.067 ms - message: -
+[31merror[39m: Error
+[31merror[39m: GET /uploads/1679290382875Screenshot%20from%202022-03-12%2021-18-01.png 404 - 1.369 ms - message: -
