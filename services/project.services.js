@@ -2,6 +2,7 @@ const Project = require("../models/project.models")
 const ProjectCategory  = require("../models/category/project.category.model")
 const User = require("../models/user.model")
 const customError = require("../errors")
+const objectSelector = require("../utils/object/objectSelector")
 
 const createProject = async ({obj}) => {
 	const isUserValid = await User.findOne({_id: obj.user})
@@ -30,7 +31,10 @@ const getSingleProject = async (projectId) => {
 		throw new customError.NotFound(`Project with id: ${projectId} not found`)
 	}
 
-	return project
+	const projectCategory = await ProjectCategory.findOne({_id: project.category})
+	let singleProject = objectSelector(project, ["_id", "title", "description", "type", "photos", "languages", "time", "members", "user"])
+	singleProject.category = projectCategory.category
+	return singleProject
 }
 
 const updateProject = async ({projectId, obj}) => {

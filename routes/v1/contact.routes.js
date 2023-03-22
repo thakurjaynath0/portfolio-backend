@@ -1,7 +1,9 @@
 const router = require("express").Router()
 
 const { sendEmail } = require("../../controllers/contact.controllers")
+const validate = require("../../middlewares/validate")
+const {contactValidations} = require("../../validations")
 
-router.route("/:username").post(sendEmail)
+router.route("/:username").post([validate(contactValidations.sendMessage)], sendEmail)
 
 module.exports = router

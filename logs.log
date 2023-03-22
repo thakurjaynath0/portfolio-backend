@@ -972,7 +972,35 @@
 [31merror[39m: POST /api/v1/upload 500 - 14.675 ms - message: ENOENT: no such file or directory, open 'C:\uploads\1679397239006IMG_20230105_230636.jpg'
 [31merror[39m: Error: ENOENT: no such file or directory, open 'C:\uploads\167939729222720230103162717_IMG_1721.JPG'
 [31merror[39m: POST /api/v1/upload 500 - 4.622 ms - message: ENOENT: no such file or directory, open 'C:\uploads\167939729222720230103162717_IMG_1721.JPG'
+<<<<<<< Updated upstream
 [31merror[39m: Error
 [31merror[39m: GET /uploads/1679290382875Screenshot%20from%202022-03-12%2021-18-01.png 404 - 3.067 ms - message: -
 [31merror[39m: Error
 [31merror[39m: GET /uploads/1679290382875Screenshot%20from%202022-03-12%2021-18-01.png 404 - 1.369 ms - message: -
+=======
+[31merror[39m: ReferenceError: category is not defined
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:33:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6416f71f82696556c057c7a9 500 - 69.038 ms - message: category is not defined
+[31merror[39m: ReferenceError: category is not defined
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:33:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6416f71f82696556c057c7a9 500 - 59.359 ms - message: category is not defined
+[31merror[39m: ReferenceError: category is not defined
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:33:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6416f71f82696556c057c7a9 500 - 194.439 ms - message: category is not defined
+[31merror[39m: ReferenceError: category is not defined
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:33:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6416f6d882696556c057c7a5 500 - 42.635 ms - message: category is not defined
+[31merror[39m: ReferenceError: category is not defined
+    at Object.getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\services\project.services.js:35:16)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getSingleProject (C:\Users\Dell\Documents\Projects\portfolio\controllers\project.controllers.js:20:18)
+[31merror[39m: GET /api/v1/project/6416f6d882696556c057c7a5 500 - 602.543 ms - message: category is not defined
+>>>>>>> Stashed changes
