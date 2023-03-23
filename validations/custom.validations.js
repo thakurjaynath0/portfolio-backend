@@ -26,7 +26,7 @@ const phone = (value, helpers) => {
 }
 
 const email = (value, helpers) => {
-	if(!value.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}/)){
+	if(!value.match(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/)){
 		return helpers.message("invalid_email_format")
 	}
 

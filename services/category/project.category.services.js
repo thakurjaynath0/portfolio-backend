@@ -14,7 +14,7 @@ const createProjectCategory = async ({category, user}) => {
 }
 
 const getAllProjectCategories = async () => {
-    const projectCategories = await ProjectCategory.find({}).populate("projects")
+    const projectCategories = await ProjectCategory.find({})
     return projectCategories
 }
 

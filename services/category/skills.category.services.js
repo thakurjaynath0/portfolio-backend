@@ -14,7 +14,7 @@ const createSkillCategory = async ({category, user}) => {
 }
 
 const getAllSkillCategories = async () => {
-    const skillCategories = await SkillCategory.find({}).populate("skills")
+    const skillCategories = await SkillCategory.find({})
     return skillCategories
 }
 
