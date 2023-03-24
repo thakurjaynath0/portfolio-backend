@@ -1054,3 +1054,5 @@
 [31merror[39m: POST /api/v1/upload 500 - 12.361 ms - message: ENOENT: no such file or directory, open 'C:\uploads\1679560535490IMG_20230105_230731.jpg'
 [31merror[39m: Error: ENOENT: no such file or directory, open 'C:\uploads\1679560816980IMG_20230105_230731.jpg'
 [31merror[39m: POST /api/v1/upload 500 - 17.133 ms - message: ENOENT: no such file or directory, open 'C:\uploads\1679560816980IMG_20230105_230731.jpg'
+[31merror[39m: Error
+[31merror[39m: GET /favicon.ico 404 - 8.872 ms - message: -
