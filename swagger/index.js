@@ -4,7 +4,7 @@ const { SwaggerTheme } = require("swagger-themes")
 const swaggerThemes = new SwaggerTheme("v3")
 const swaggerOptions = {
 	explorer: true,
-	customCss: swaggerThemes.getBuffer("monokai")
+	customCss: swaggerThemes.getBuffer("material")
 }
 
 module.exports = {

@@ -1,10 +1,58 @@
 const User = require("../models/user.model")
+const ProjectCategory = require("../models/category/project.category.model")
+const SkillCategory = require("../models/category/skills.category.model")
+const Project = require("../models/project.models")
+const Skills = require("../models/skills.models")
 const OtherDetails = require("../models/otherDetails.model")
 const Education = require("../models/education.model")
 const SocialMedias = require("../models/socialMedias.model")
-const ProjectCategory = require("../models/category/project.category.model")
-const SkillCategory = require("../models/category/skills.category.model")
 const customError = require("../errors")
+
+const createCompleteUser = async (userId, {userOtherDetails, userEducations, userSocialMedias, userProjects, userSkills}) => {
+	const isUserValid = await User.findOne({_id: userId})
+
+	if(!isUserValid){
+		throw new customError.NotFound(`User with id: ${userId} not found`)
+	}
+
+	await OtherDetails.create({ ...userOtherDetails })
+
+	for(const i in userEducations){
+		const education = userEducations[i]
+		await Education.create({ ...education })
+	}
+
+	for(const i in userSocialMedias){
+		const socialMedia = userSocialMedias[i]
+		await SocialMedias.create({ ... socialMedia })
+	}
+
+	for(const i in userProjects){
+		const project = userProjects[i]
+		await Project.create({ ...project })
+	}
+
+	for(const i in userSkills){
+		const skills = userSkills[i]
+		await Skills.create({ ...skills })
+	}
+}
+
+const deleteAllUserDetail = async (userId) => {
+	await OtherDetails.deleteMany({ user: userId })
+
+	await Education.deleteMany({ user: userId })
+
+	await SocialMedias.deleteMany({ user: userId })
+
+	await ProjectCategory.deleteMany({ user: userId })
+
+	await Project.deleteMany({ user: userId })
+
+	await SkillCategory.deleteMany({ user: userId })
+
+	await Skills.deleteMany({ user: userId })
+}
 
 const getUserDetails = async (username) => {
 	let userDetails = {}
@@ -59,4 +107,8 @@ const getUserDetails = async (username) => {
 	return userDetails
 }
 
-module.exports = {getUserDetails}
+module.exports = {
+	createCompleteUser,
+	getUserDetails,
+	deleteAllUserDetail
+}

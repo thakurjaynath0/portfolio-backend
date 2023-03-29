@@ -1,5 +1,6 @@
 const SkillCategory = require("../../models/category/skills.category.model")
 const User = require("../../models/user.model")
+const Skills = require("../../models/skills.models")
 const customError = require("../../errors")
 
 const createSkillCategory = async ({category, user}) => {
@@ -59,6 +60,8 @@ const deleteSkillCategory = async (id) => {
     if (!skillCategory) {
         throw new customError.NotFound(`Skill Category with id: ${id} not found`)
     }
+
+    await Skills.deleteMany({ category: id })
 
     skillCategory = await SkillCategory.findOneAndRemove({_id: id})
     return skillCategory

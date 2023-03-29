@@ -1,5 +1,6 @@
 const User = require("../models/user.model")
 const customError = require("../errors")
+const { deleteAllUserDetail } = require("./about.services")
 
 const createUser = async ({obj}) => {
 	const user = await User.create({...obj})
@@ -41,6 +42,7 @@ const deleteUser = async (userId) => {
 		throw new customError.NotFound(`User with id: ${userId} not found`)
 	}
 
+	deleteAllUserDetail(userId)
 	user = await User.findOneAndRemove({_id: userId})
 	return user;
 }

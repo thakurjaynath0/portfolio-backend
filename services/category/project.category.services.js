@@ -1,5 +1,6 @@
 const ProjectCategory  = require("../../models/category/project.category.model")
 const User = require("../../models/user.model")
+const Project = require("../../models/project.models")
 const customError = require("../../errors")
 
 const createProjectCategory = async ({category, user}) => {
@@ -60,6 +61,7 @@ const deleteProjectCategory = async (id) => {
         throw new customError.NotFound(`Project Category with id: ${id} not found`)
     }
 
+    await Project.deleteMany({ category: id })
     projectCategory = await ProjectCategory.findOneAndRemove({_id: id})
     return projectCategory
 }
