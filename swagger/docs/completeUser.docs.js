@@ -3,6 +3,8 @@ const { educationSchema } = require("./education.docs")
 const { socialMediaSchema } = require("./socialMedias.docs")
 const { projectSchema } = require("./project.docs")
 const { skillsSchema } = require("./skills.docs")
+const { projectCategorySchema } = require("./project.category.docs")
+const { skillsCategorySchema } = require("./skills.category.docs")
 
 const createUserPath = {
 	"/users/createuser/{id}": {
@@ -52,7 +54,9 @@ const createUserSchema = {
 			otherDetails: otherDetailsSchema.UserDetails,
 			education: educationSchema.Education,
 			socialMedias: socialMediaSchema.SocialMedia,
+			projectCategory: projectCategorySchema.ProjectCategory,
 			projects: projectSchema.Project,
+			skillsCategory: skillsCategorySchema.SkillsCategory,
 			skills: skillsSchema.Skills
 		},
 		example: {
@@ -87,24 +91,36 @@ const createUserSchema = {
 					user: "6415ebd5493db4c083XXXXX"
 				}
 			],
-			projects: [
+			projectCategory: [
 				{
-					category: "6416e63ffb40fefac284XXXX",
-					title: "Note Taking",
-					description: "It is notetaking web application developed using MERN",
-					type: "single",
-					photos: ["photo1", "photo2"],
-					languages: ["html", "css", "js"],
-					time: "1 months",
-					user: "6415ebd5493db4c0836cXXXX"
+					category: "Web Development",
+					user: "6415ebd5493db4c083XXXXX",
+					projects: [
+						{
+							title: "Note Taking",
+							description: "It is notetaking web application developed using MERN",
+							type: "single",
+							photos: ["photo1", "photo2"],
+							languages: ["html", "css", "js"],
+							time: "1 months"
+						}
+					],
 				}
 			],
-			skills: [
+			skillsCategory: [
 				{
-					category: "6416e63ffb40fefac284XXXX",
-					name: "HTML",
-					level: 7,
-					user: "6415ebd5493db4c0836cXXXX"
+					category: "Web Development",
+					user: "6415ebd5493db4c083XXXXX",
+					skills: [
+						{
+							name: "HTML",
+							level: 7
+						},
+						{
+							name: "CSS",
+							level: 6
+						}
+					]
 				}
 			]
 		}	

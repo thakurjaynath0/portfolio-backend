@@ -8,7 +8,7 @@ const Education = require("../models/education.model")
 const SocialMedias = require("../models/socialMedias.model")
 const customError = require("../errors")
 
-const createCompleteUser = async (userId, {userOtherDetails, userEducations, userSocialMedias, userProjects, userSkills}) => {
+const createCompleteUser = async (userId, {userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userProjects, userSkillsCategory, userSkills}) => {
 	const isUserValid = await User.findOne({_id: userId})
 
 	if(!isUserValid){
@@ -27,14 +27,22 @@ const createCompleteUser = async (userId, {userOtherDetails, userEducations, use
 		await SocialMedias.create({ ... socialMedia })
 	}
 
-	for(const i in userProjects){
-		const project = userProjects[i]
-		await Project.create({ ...project })
+	for(const i in userProjectCategory){
+		const projectcategoryInfo = userProjectCategory[i].projectCategoryInfo
+		const projectCategory = await ProjectCategory.create({ ...projectcategoryInfo })
+		for(const j in userProjectCategory[i].userProjects){
+			const projectInfo = userProjectCategory[i].userProjects[j]
+			await Project.create({ user: projectCategory.user, category: projectCategory._id, ...projectInfo })
+		}
 	}
 
-	for(const i in userSkills){
-		const skills = userSkills[i]
-		await Skills.create({ ...skills })
+	for(const i in userSkillsCategory){
+		const skillscategoryInfo = userSkillsCategory[i].skillsCategoryInfo
+		const skillsCategory = await SkillCategory.create({ ...skillscategoryInfo })
+		for(const j in userSkillsCategory[i].userSkills){
+			const skillsInfo = userSkillsCategory[i].userSkills[j]
+			await Skills.create({user: skillsCategory.user, category: skillsCategory._id, ...skillsInfo})
+		}
 	}
 }
 

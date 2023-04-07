@@ -37,7 +37,7 @@ const deleteUser = async (req, res) => {
 
 const createCompleteUser = async (req, res) => {
 	const { id: userId } = req.params
-	const {otherDetails, educations, socialMedias, projects, skills} = req.body
+	const {otherDetails, educations, socialMedias, projectCategory, skillsCategory} = req.body
 
 	const userOtherDetails= objectSelector(otherDetails, ["tagline", "email", "description", "age", "contact", "from", "user"])
 	
@@ -51,27 +51,44 @@ const createCompleteUser = async (req, res) => {
 	let userSocialMedias = []
 	for(const i in socialMedias){
 		let socialMedia = socialMedias[i]
-		req.body.socialMedias
 		socialMedia = objectSelector(socialMedias[i], ["media", "link", "user"])
 		userSocialMedias = [...userSocialMedias, socialMedia]
 	}
-	console.log(userSocialMedias)
 	
-	let userProjects = []
-	for(const i in projects){
-		let project = projects[i]
-		project = objectSelector(projects[i], ["category", "title", "description", "type", "photos", "languages", "time", "members", "user"])
-		userProjects = [...userProjects, project]
+	let userProjectCategory = []
+	for(const i in projectCategory){
+		const info = {}
+		let projectCategoryInfo = projectCategory[i]
+		projectCategoryInfo = objectSelector(projectCategory[i], ["category", "user"])
+		let userProjects = []
+		for(const j in projectCategory[i].projects){
+			let project = projectCategory[i].projects[j]
+			project = objectSelector(projectCategory[i].projects[j], ["title", "description", "type", "photos", "languages", "time", "members"])
+			userProjects = [...userProjects, project]
+		}
+		info.projectCategoryInfo = projectCategoryInfo
+		info.userProjects = userProjects
+		userProjectCategory = [...userProjectCategory, info]
 	}
 
-	let userSkills = []
-	for(const i in skills){
-		let skill = skills[i]
-		skill = objectSelector(skills[i], ["category", "skills", "name", "level", "user"])
-		userSkills = [...userSkills, skill]
+	let userSkillsCategory = []
+	for(const i in skillsCategory){
+		const info = {}
+		let skillsCategoryInfo = skillsCategory[i]
+		skillsCategoryInfo = objectSelector(skillsCategory[i], ["category", "user"])
+		let userSkills = []
+		for(const j in skillsCategory[i].skills){
+			let skill = skillsCategory[i].skills[j]
+			skill = objectSelector(skillsCategory[i].skills[j], ["name", "level"])
+			userSkills = [...userSkills, skill]
+		}
+		info.skillsCategoryInfo = skillsCategoryInfo
+		info.userSkills = userSkills
+		userSkillsCategory = [...userSkillsCategory, info]
 	}
 
-	await aboutServices.createCompleteUser(userId, {userOtherDetails, userEducations, userSocialMedias, userProjects, userSkills})
+	
+	await aboutServices.createCompleteUser(userId, {userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userSkillsCategory})
 	res.status(StatusCodes.OK).json({ msg: "user created successfully" })
 }
 

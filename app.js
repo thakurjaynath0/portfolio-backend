@@ -43,9 +43,11 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument, swaggerOp
 
 app.use("/api/v1", routes)
 
+app.use("/uploads", express.static(__dirname+"/uploads"))
+
 app.use("", express.static(path.join(__dirname+"/frontend")))
 
-app.get("", async (req, res) => {
+app.get("*", async (req, res) => {
 	res.status(200).sendFile(path.join(__dirname + "/frontend/index.html"))
 })
 

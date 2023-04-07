@@ -1297,3 +1297,111 @@
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:80:22)
 [31merror[39m: GET /api/v1/users/details/nikhil 404 - 57.072 ms - message: User with username: nikhil not found
+[31merror[39m: Error: User with username: nikhil not found
+    at Object.getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:64:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:80:22)
+[31merror[39m: GET /api/v1/users/details/nikhil 404 - 157.238 ms - message: User with username: nikhil not found
+[31merror[39m: Error: User with id: 64241f2201f7f9c7d28c57da not found
+    at Object.createSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\services\category\skills.category.services.js:10:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createSkillCategory (C:\Users\Dell\Documents\Projects\portfolio\controllers\category\skills.category.controller.js:6:27)
+[31merror[39m: POST /api/v1/skillscategory 404 - 109.883 ms - message: User with id: 64241f2201f7f9c7d28c57da not found
+[31merror[39m: Error: User with username: nikhil not found
+    at Object.getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:64:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:80:22)
+[31merror[39m: GET /api/v1/users/details/nikhil 404 - 126.417 ms - message: User with username: nikhil not found
+[31merror[39m: Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\application.js:635:24)
+    at start (C:\Users\Dell\Documents\Projects\portfolio\server.js:8:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[31merror[39m: Error: "category" is not allowed,"user" is not allowed,"skills" is not allowed
+    at C:\Users\Dell\Documents\Projects\portfolio\middlewares\validate.js:13:15
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\route.js:114:3)
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:376:14)
+[31merror[39m: POST /api/v1/users/createuser/642fb7d0b1c8d56581397db9 400 - 14.063 ms - message: "category" is not allowed,"user" is not allowed,"skills" is not allowed
+[31merror[39m: ValidationError: ProjectCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/users/createuser/642fb7d0b1c8d56581397db9 400 - 464.872 ms - message: ProjectCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+[31merror[39m: MongoServerError: E11000 duplicate key error collection: Portfolio.otherdetails index: email_1 dup key: { email: "test@gmail.com" }
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection_pool.js:299:25
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:284:20)
+    at Connection.onMessage (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:219:9)
+    at MessageStream.<anonymous> (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+[31merror[39m: POST /api/v1/users/createuser/642fb7d0b1c8d56581397db9 400 - 130.563 ms - message: Duplicate value entered for email field, please choose another value
+[31merror[39m: MongoServerError: E11000 duplicate key error collection: Portfolio.otherdetails index: email_1 dup key: { email: "test@gmail.com" }
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection_pool.js:299:25
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\sdam\server.js:284:20)
+    at Connection.onMessage (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:219:9)
+    at MessageStream.<anonymous> (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\connection.js:60:60)
+    at MessageStream.emit (node:events:526:28)
+    at processIncomingData (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+[31merror[39m: POST /api/v1/users/createuser/642fb7d0b1c8d56581397db9 400 - 252.599 ms - message: Duplicate value entered for email field, please choose another value
+[31merror[39m: Error: User with id: 642fb7d0b1c8d56581397db9 not found
+    at Object.createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:15:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:92:2)
+[31merror[39m: POST /api/v1/users/createuser/642fb7d0b1c8d56581397db9 404 - 48.587 ms - message: User with id: 642fb7d0b1c8d56581397db9 not found
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/users/createuser/642fbb413b04aad8a34b4c60 400 - 251.498 ms - message: SkillCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+[31merror[39m: Error: User with username: nikhil not found
+    at Object.getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:72:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getUserDetails (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:98:22)
+[31merror[39m: GET /api/v1/users/details/nikhil 404 - 60.224 ms - message: User with username: nikhil not found
+[31merror[39m: TypeError: userProjectCategory[i].projects is not iterable
+    at Object.createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:34:51)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:91:2)
+[31merror[39m: POST /api/v1/users/createuser/642fdeaded542f2a602924c3 500 - 194.234 ms - message: userProjectCategory[i].projects is not iterable
+[31merror[39m: ReferenceError: j is not defined
+    at Object.createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\services\about.services.js:35:60)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCompleteUser (C:\Users\Dell\Documents\Projects\portfolio\controllers\user.controllers.js:91:2)
+[31merror[39m: POST /api/v1/users/createuser/642fdeaded542f2a602924c3 500 - 145.073 ms - message: j is not defined
+[31merror[39m: ValidationError: SkillCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+    at model.Document.invalidate (C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:3055:32)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\document.js:2843:17
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\mongoose\lib\schematype.js:1349:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[31merror[39m: POST /api/v1/users/createuser/642fdeaded542f2a602924c3 400 - 615.651 ms - message: SkillCategory validation failed: user: Path `user` is required., category: Path `category` is required.
+[31merror[39m: Error: not_found
+    at C:\Users\Dell\Documents\Projects\portfolio\app.js:56:7
+    at newFn (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Dell\Documents\Projects\portfolio\node_modules\express\lib\router\index.js:280:10)
+    at SendStream.error (C:\Users\Dell\Documents\Projects\portfolio\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:526:28)
+    at SendStream.error (C:\Users\Dell\Documents\Projects\portfolio\node_modules\send\index.js:270:17)
+[31merror[39m: GET /favicon.ico 404 - 24.829 ms - message: not_found
