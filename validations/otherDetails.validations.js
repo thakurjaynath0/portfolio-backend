@@ -1,10 +1,10 @@
 const joi = require("joi")
-const {objectId, phone} = require("./custom.validations")
+const {objectId, phone, email} = require("./custom.validations")
 
 const createOtherDetails = {
 	body: joi.object().keys({
 		tagline: joi.string().required(),
-		email: joi.string().required(),
+		email: joi.custom(email).required(),
 		description: joi.string().required(),
 		age: joi.number().required(),
 		contact: joi.custom(phone).required(),
@@ -16,7 +16,7 @@ const createOtherDetails = {
 const updateOtherDetails = {
 	body: joi.object().keys({
 		tagline: joi.string(),
-		email: joi.string(),
+		email: joi.custom(email),
 		description: joi.string(),
 		age: joi.number(),
 		contact: joi.custom(phone),

@@ -8,28 +8,23 @@ const Education = require("../models/education.model")
 const SocialMedias = require("../models/socialMedias.model")
 const customError = require("../errors")
 
-const createCompleteUser = async (userId, {userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userProjects, userSkillsCategory, userSkills}) => {
-	const isUserValid = await User.findOne({_id: userId})
-
-	if(!isUserValid){
-		throw new customError.NotFound(`User with id: ${userId} not found`)
-	}
-
-	await OtherDetails.create({ ...userOtherDetails })
+const createCompleteUser = async ({userDetails, userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userSkillsCategory}) => {
+	const user = await User.create({ ...userDetails })
+	await OtherDetails.create({ ...userOtherDetails, user: user._id})
 
 	for(const i in userEducations){
 		const education = userEducations[i]
-		await Education.create({ ...education })
+		await Education.create({ ...education, user: user._id })
 	}
 
 	for(const i in userSocialMedias){
 		const socialMedia = userSocialMedias[i]
-		await SocialMedias.create({ ... socialMedia })
+		await SocialMedias.create({ ... socialMedia, user: user._id })
 	}
 
 	for(const i in userProjectCategory){
 		const projectcategoryInfo = userProjectCategory[i].projectCategoryInfo
-		const projectCategory = await ProjectCategory.create({ ...projectcategoryInfo })
+		const projectCategory = await ProjectCategory.create({ ...projectcategoryInfo, user: user._id })
 		for(const j in userProjectCategory[i].userProjects){
 			const projectInfo = userProjectCategory[i].userProjects[j]
 			await Project.create({ user: projectCategory.user, category: projectCategory._id, ...projectInfo })
@@ -38,7 +33,7 @@ const createCompleteUser = async (userId, {userOtherDetails, userEducations, use
 
 	for(const i in userSkillsCategory){
 		const skillscategoryInfo = userSkillsCategory[i].skillsCategoryInfo
-		const skillsCategory = await SkillCategory.create({ ...skillscategoryInfo })
+		const skillsCategory = await SkillCategory.create({ ...skillscategoryInfo, user: user._id })
 		for(const j in userSkillsCategory[i].userSkills){
 			const skillsInfo = userSkillsCategory[i].userSkills[j]
 			await Skills.create({user: skillsCategory.user, category: skillsCategory._id, ...skillsInfo})

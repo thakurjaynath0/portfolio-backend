@@ -1,3 +1,4 @@
+const { userSchema } = require("./user.docs")
 const { otherDetailsSchema } = require("./otherDetails.docs")
 const { educationSchema } = require("./education.docs")
 const { socialMediaSchema } = require("./socialMedias.docs")
@@ -7,18 +8,7 @@ const { projectCategorySchema } = require("./project.category.docs")
 const { skillsCategorySchema } = require("./skills.category.docs")
 
 const createUserPath = {
-	"/users/createuser/{id}": {
-		parameters: [
-			{
-				in: "path",
-				name: "id",
-				schema: {
-					type: "string"
-				},
-				required: true,
-				description: "The user id"
-			}
-		],
+	"/users/createuser": {
 		post: {
 			tags: ["CreateUser"],
 			summary: "Create User With Complete Details",
@@ -51,6 +41,7 @@ const createUserSchema = {
 		title: ["CreateUser"],
 		type: "object",
 		properties: {
+			user: userSchema.User,
 			otherDetails: otherDetailsSchema.UserDetails,
 			education: educationSchema.Education,
 			socialMedias: socialMediaSchema.SocialMedia,
@@ -60,6 +51,11 @@ const createUserSchema = {
 			skills: skillsSchema.Skills
 		},
 		example: {
+			user: {
+				username: "nikhil",
+				name: "Nikhil Thakur",
+				picture: "dirname/uploads/user.jpg"
+			},
 			otherDetails: {
 				tagline: "Web Developer",
 				email: "test@gmail.com",
@@ -67,7 +63,6 @@ const createUserSchema = {
 				age: 21,
 				contact: "9813336677",
 				from: "Nepal",
-				user: "6415ebd5493db4c083XXXXX"
 			},
 			educations: [
 				{
@@ -76,25 +71,21 @@ const createUserSchema = {
 					location: "Mars",
 					from: "2217",
 					to: "2419",
-					user: "6415ebd5493db4c083XXXXX"
 				}
 			],
 			socialMedias: [
 				{
 					media: "facebook",
 					link: "www.facebook.com/nikhil",
-					user: "6415ebd5493db4c083XXXXX"
 				},
 				{
 					media: "instagram",
 					link: "www.instagram.com/nikhil",
-					user: "6415ebd5493db4c083XXXXX"
 				}
 			],
 			projectCategory: [
 				{
 					category: "Web Development",
-					user: "6415ebd5493db4c083XXXXX",
 					projects: [
 						{
 							title: "Note Taking",
@@ -110,7 +101,6 @@ const createUserSchema = {
 			skillsCategory: [
 				{
 					category: "Web Development",
-					user: "6415ebd5493db4c083XXXXX",
 					skills: [
 						{
 							name: "HTML",

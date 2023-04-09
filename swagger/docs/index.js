@@ -13,7 +13,6 @@ const {fileuploadPath, fileUploadSchema} = require("./fileupload.docs")
 const {createUserPath, createUserSchema} = require("./completeUser.docs")
 
 const paths = {
-	...fileuploadPath,
 	...userPath,
 	...projectCategoryPath,
 	...skillsCategoryPath,
@@ -23,6 +22,7 @@ const paths = {
 	...projectPath,
 	...skillsPath,
 	...createUserPath,
+	...fileuploadPath,
 	...contactPath,
 }
 const schemas = {

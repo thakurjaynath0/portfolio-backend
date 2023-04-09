@@ -8,6 +8,6 @@ const {completeUserValidations} = require("../../validations")
 router.route("/").get(getAllUsers).post([validate(userValidations.createUser)], createUser)
 router.route("/:id").get(getSingleUser).patch([validate(userValidations.updateUser)], updateUser).delete(deleteUser)
 router.route("/details/:username").get(getUserDetails)
-router.post("/createuser/:id", [validate(completeUserValidations.createComplteUser)], createCompleteUser)
+router.post("/createuser", [validate(completeUserValidations.createComplteUser)], createCompleteUser)
 
 module.exports = router

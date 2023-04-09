@@ -36,22 +36,21 @@ const deleteUser = async (req, res) => {
 }
 
 const createCompleteUser = async (req, res) => {
-	const { id: userId } = req.params
-	const {otherDetails, educations, socialMedias, projectCategory, skillsCategory} = req.body
-
-	const userOtherDetails= objectSelector(otherDetails, ["tagline", "email", "description", "age", "contact", "from", "user"])
+	const {user, otherDetails, educations, socialMedias, projectCategory, skillsCategory} = req.body
+	const userDetails = objectSelector(user, ["username", "name", "picture"])
+	const userOtherDetails= objectSelector(otherDetails, ["tagline", "email", "description", "age", "contact", "from"])
 	
 	let userEducations = []
 	for(const i in educations){
 		let education = educations[i]
-		education = objectSelector(educations[i], ["course", "institution", "location", "from", "to", "user"])
+		education = objectSelector(educations[i], ["course", "institution", "location", "from", "to"])
 		userEducations = [...userEducations, education]
 	}
 
 	let userSocialMedias = []
 	for(const i in socialMedias){
 		let socialMedia = socialMedias[i]
-		socialMedia = objectSelector(socialMedias[i], ["media", "link", "user"])
+		socialMedia = objectSelector(socialMedias[i], ["media", "link"])
 		userSocialMedias = [...userSocialMedias, socialMedia]
 	}
 	
@@ -59,7 +58,7 @@ const createCompleteUser = async (req, res) => {
 	for(const i in projectCategory){
 		const info = {}
 		let projectCategoryInfo = projectCategory[i]
-		projectCategoryInfo = objectSelector(projectCategory[i], ["category", "user"])
+		projectCategoryInfo = objectSelector(projectCategory[i], ["category"])
 		let userProjects = []
 		for(const j in projectCategory[i].projects){
 			let project = projectCategory[i].projects[j]
@@ -75,7 +74,7 @@ const createCompleteUser = async (req, res) => {
 	for(const i in skillsCategory){
 		const info = {}
 		let skillsCategoryInfo = skillsCategory[i]
-		skillsCategoryInfo = objectSelector(skillsCategory[i], ["category", "user"])
+		skillsCategoryInfo = objectSelector(skillsCategory[i], ["category"])
 		let userSkills = []
 		for(const j in skillsCategory[i].skills){
 			let skill = skillsCategory[i].skills[j]
@@ -88,7 +87,7 @@ const createCompleteUser = async (req, res) => {
 	}
 
 	
-	await aboutServices.createCompleteUser(userId, {userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userSkillsCategory})
+	await aboutServices.createCompleteUser({userDetails,userOtherDetails, userEducations, userSocialMedias, userProjectCategory, userSkillsCategory})
 	res.status(StatusCodes.OK).json({ msg: "user created successfully" })
 }
 
